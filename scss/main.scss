@@ -1,0 +1,213 @@
+* {
+	margin:0 ; 
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import "variable.scss";
+@mixin titulos {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+@mixin parrafos {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+@mixin tarjeta {
+    background-color: $rosa;
+    height: 200px;
+    margin: 10px;
+}
+
+header {
+    .container-fluid {
+        .redes {
+            background-color: $rosa;
+            display: flex;
+            align-items: center;
+            height: 45px;
+
+            .instalogo{
+                width: 30px;
+            }
+            h6 {
+                font-weight: lighter;
+                font-style: italic;
+                margin: 10px;
+            }
+        }
+    }
+
+    ul {
+        display:flex;
+        li {
+            list-style: none;
+            margin: 10px;
+            text-decoration: none;
+
+            a{
+                letter-spacing: 0.2rem;
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+                color: $violeta;
+            }
+        }
+    }
+}
+
+    .logo {
+        width: 250px;
+    }
+
+    .presentacion_descripcion {
+        max-width: 400px;
+        font-family: 'Red Hat Display', sans-serif;
+    
+            .presentacion_descripcion--tituloprincipal {
+                @include titulos;
+            }
+            .presentacion_descripcion--parrafo {
+            @include parrafos;
+            }
+        }
+
+
+.row {
+    .yo {
+        width: 500px;
+    }
+}
+
+footer {
+    background-color: $rosa;
+    margin-top: 100px;
+    ul {
+        padding: 50px;
+        li {
+            list-style: none;
+            padding: 5px;
+            a {
+                letter-spacing: 0.2rem;
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+                color: $violeta;
+            }
+        }
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-weight: lighter;
+    }
+}
+
+
+form {
+    margin: 20px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+
+.automaquillaje {
+    max-width: 200px;
+    background-color:$rosa;
+}
+
+.cursos {
+    .cursos_meta {
+        h2 {
+        @include titulos;
+        }
+    }
+}
+
+.presentacion {
+
+    img {
+        border-radius: 8px;
+        width: 700px;
+    }
+}
+
+.row {
+    .descripcion {
+        @include parrafos;
+    }
+}
+
+.galeria {
+    img {
+        margin: 10px;
+    }
+}
+
+
+.cursos {
+    .cursos_meta {
+        h2 {
+            @include titulos;
+        }
+        p {
+            @include parrafos;
+        }
+    }
+    .cursos_div {
+        h3 {
+            @include titulos;
+            color: $violeta;
+        }
+        p {
+            @include parrafos;
+            color: $violeta;
+        }
+        h6 {
+            @include titulos;
+        }
+        strong {
+            @include parrafos;
+        }
+        min-width: 400px;
+        max-width: 500px;
+        border: 1px solid $rosa;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 10px;
+        background-color: $rosa;
+    }
+
+}
+
+.cursos_div {
+    ul  {
+    list-style-type: none;
+    li {
+        @include parrafos;
+        color: $violeta;
+    }
+}
+}
+
+.btn {
+    background-color: $violeta;
+}
+
+.servicios_peinado {
+    @include tarjeta;
+}
+
+.servicios_maquillaje {
+    @include tarjeta
+}
+
+.servicios_novias {
+    @include tarjeta
+}

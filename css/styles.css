@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header .container-fluid .redes {
+  background-color: #f7d6e0;
+  display: flex;
+  align-items: center;
+  height: 45px; }
+  header .container-fluid .redes .instalogo {
+    width: 30px; }
+  header .container-fluid .redes h6 {
+    font-weight: lighter;
+    font-style: italic;
+    margin: 10px; }
+
+header ul {
+  display: flex; }
+  header ul li {
+    list-style: none;
+    margin: 10px;
+    text-decoration: none; }
+    header ul li a {
+      letter-spacing: 0.2rem;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      color: #5e548e; }
+
+.logo {
+  width: 250px; }
+
+.presentacion_descripcion {
+  max-width: 400px;
+  font-family: 'Red Hat Display', sans-serif; }
+  .presentacion_descripcion .presentacion_descripcion--tituloprincipal {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; }
+  .presentacion_descripcion .presentacion_descripcion--parrafo {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: lighter; }
+
+.row .yo {
+  width: 500px; }
+
+footer {
+  background-color: #f7d6e0;
+  margin-top: 100px; }
+  footer ul {
+    padding: 50px; }
+    footer ul li {
+      list-style: none;
+      padding: 5px; }
+      footer ul li a {
+        letter-spacing: 0.2rem;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: #5e548e; }
+  footer p {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: lighter; }
+
+form {
+  margin: 20px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
+
+.automaquillaje {
+  max-width: 200px;
+  background-color: #f7d6e0; }
+
+.cursos .cursos_meta h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.presentacion img {
+  border-radius: 8px;
+  width: 700px; }
+
+.row .descripcion {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: lighter; }
+
+.galeria img {
+  margin: 10px; }
+
+.cursos .cursos_meta h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.cursos .cursos_meta p {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: lighter; }
+
+.cursos .cursos_div {
+  min-width: 400px;
+  max-width: 500px;
+  border: 1px solid #f7d6e0;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f7d6e0; }
+  .cursos .cursos_div h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #5e548e; }
+  .cursos .cursos_div p {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    color: #5e548e; }
+  .cursos .cursos_div h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; }
+  .cursos .cursos_div strong {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: lighter; }
+
+.cursos_div ul {
+  list-style-type: none; }
+  .cursos_div ul li {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    color: #5e548e; }
+
+.btn {
+  background-color: #5e548e; }
+
+.servicios_peinado {
+  background-color: #f7d6e0;
+  height: 200px;
+  margin: 10px; }
+
+.servicios_maquillaje {
+  background-color: #f7d6e0;
+  height: 200px;
+  margin: 10px; }
+
+.servicios_novias {
+  background-color: #f7d6e0;
+  height: 200px;
+  margin: 10px; }
