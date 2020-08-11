@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -35,15 +36,14 @@ header ul {
   max-width: 400px;
   font-family: 'Red Hat Display', sans-serif; }
   .presentacion_descripcion .presentacion_descripcion--tituloprincipal {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 400; }
   .presentacion_descripcion .presentacion_descripcion--parrafo {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: lighter; }
+    font-family: 'Red Hat Display', sans-serif; }
 
 .row .yo {
-  width: 500px; }
+  width: 200px;
+  border-radius: 50%; }
 
 footer {
   background-color: #f7d6e0;
@@ -72,12 +72,18 @@ form {
   margin-right: auto;
   margin-top: 50px; }
 
+.descripcion_foto {
+  border-right: solid 2px #f7d6e0; }
+
+.estudio_foto {
+  border-left: solid 2px #f7d6e0; }
+
 .automaquillaje {
   max-width: 200px;
   background-color: #f7d6e0; }
 
 .cursos .cursos_meta h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: 400; }
 
 .presentacion img {
@@ -85,21 +91,17 @@ form {
   width: 700px; }
 
 .row .descripcion {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-weight: lighter; }
+  font-family: 'Red Hat Display', sans-serif; }
 
 .galeria img {
   margin: 10px; }
 
 .cursos .cursos_meta h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: 400; }
 
 .cursos .cursos_meta p {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-weight: lighter; }
+  font-family: 'Red Hat Display', sans-serif; }
 
 .cursos .cursos_div {
   min-width: 400px;
@@ -110,44 +112,118 @@ form {
   padding: 10px;
   background-color: #f7d6e0; }
   .cursos .cursos_div h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
     color: #5e548e; }
   .cursos .cursos_div p {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: lighter;
+    font-family: 'Red Hat Display', sans-serif;
     color: #5e548e; }
   .cursos .cursos_div h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 400; }
   .cursos .cursos_div strong {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: lighter; }
+    font-family: 'Red Hat Display', sans-serif; }
+
+.marcas {
+  border-top: solid 3px #f7d6e0;
+  padding: 10px;
+  margin-top: 100px; }
 
 .cursos_div ul {
   list-style-type: none; }
   .cursos_div ul li {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: lighter;
+    font-family: 'Red Hat Display', sans-serif;
     color: #5e548e; }
 
 .btn {
   background-color: #5e548e; }
 
+.tarjetas {
+  margin-top: 100px; }
+
 .servicios_peinado {
-  background-color: #f7d6e0;
-  height: 200px;
-  margin: 10px; }
+  height: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+  .servicios_peinado p {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-weight: lighter; }
+  .servicios_peinado img {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f7d6e0;
+    padding: 10px; }
+  .servicios_peinado img:hover {
+    transition: 0.70s;
+    transform: rotate(360deg); }
 
 .servicios_maquillaje {
-  background-color: #f7d6e0;
-  height: 200px;
-  margin: 10px; }
+  height: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+  .servicios_maquillaje p {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-weight: lighter; }
+  .servicios_maquillaje img {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f7d6e0;
+    padding: 10px; }
+  .servicios_maquillaje img:hover {
+    transition: 0.70s;
+    transform: rotate(360deg); }
 
 .servicios_novias {
-  background-color: #f7d6e0;
-  height: 200px;
-  margin: 10px; }
+  height: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+  .servicios_novias p {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-weight: lighter; }
+  .servicios_novias img {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f7d6e0;
+    padding: 10px; }
+  .servicios_novias img:hover {
+    transition: 0.70s;
+    transform: rotate(360deg); }
+
+.servicios_uñas {
+  height: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+  .servicios_uñas p {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-weight: lighter; }
+  .servicios_uñas img {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f7d6e0;
+    padding: 10px; }
+  .servicios_uñas img:hover {
+    transition: 0.70s;
+    transform: rotate(360deg); }
+
+nav ul li a:hover {
+  text-decoration: none; }

@@ -5,20 +5,23 @@
 }
 
 @import "variable.scss";
+
 @mixin titulos {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
 }
 @mixin parrafos {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: lighter;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 @mixin tarjeta {
-    background-color: $rosa;
-    height: 200px;
+    height: 300px;
     margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -77,7 +80,8 @@ header {
 
 .row {
     .yo {
-        width: 500px;
+        width: 200px;
+        border-radius: 50%;
     }
 }
 
@@ -115,7 +119,13 @@ form {
     margin-top: 50px;
 }
 
+.descripcion_foto {
+    border-right: solid 2px $rosa;
+}
 
+.estudio_foto {
+    border-left: solid 2px $rosa;
+}
 
 .automaquillaje {
     max-width: 200px;
@@ -186,6 +196,12 @@ form {
 
 }
 
+.marcas {
+    border-top: solid 3px $rosa;
+    padding: 10px;
+    margin-top: 100px;
+}
+
 .cursos_div {
     ul  {
     list-style-type: none;
@@ -200,14 +216,93 @@ form {
     background-color: $violeta;
 }
 
+.tarjetas {
+    margin-top: 100px;
+}
+
 .servicios_peinado {
     @include tarjeta;
+    p {
+        @include parrafos;
+        text-align: center;
+        font-weight: lighter;
+    }
+    img {
+        border: 2px solid black;
+        border-radius: 8px;
+        background-color: $rosa;
+        padding: 10px;
+    }
+    img:hover {
+        transition: 0.70s;  
+        transform: rotate(360deg);
+    }
 }
 
 .servicios_maquillaje {
-    @include tarjeta
+    @include tarjeta;
+        p {
+            @include parrafos;
+            text-align: center;
+            font-weight: lighter;
+        }
+        img {
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: $rosa;
+            padding: 10px;
+        }
+        img:hover {
+            transition: 0.70s;  
+            transform: rotate(360deg);
+        }
 }
 
 .servicios_novias {
-    @include tarjeta
+    @include tarjeta;
+    p {
+        @include parrafos;
+        text-align: center;
+        font-weight: lighter;
+    }
+    img {
+        border: 2px solid black;
+        border-radius: 8px;
+        background-color: $rosa;
+        padding: 10px;
+    }
+    img:hover {
+        transition: 0.70s;  
+        transform: rotate(360deg);
+    }
+}
+
+.servicios_uñas {
+    @include tarjeta;
+    p {
+        @include parrafos;
+        text-align: center;
+        font-weight: lighter;
+    }
+    img {
+        border: 2px solid black;
+        border-radius: 8px;
+        background-color: $rosa;
+        padding: 10px;
+    }
+    img:hover {
+        transition: 0.70s;  
+        transform: rotate(360deg);
+    }
+}
+
+
+nav {
+    ul {
+        li {
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
