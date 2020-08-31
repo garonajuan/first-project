@@ -81,9 +81,10 @@ header {
 .row {
     .yo {
         width: 200px;
-        border-radius: 50%;
+        border-radius: 10px;
     }
 }
+
 
 footer {
     background-color: $rosa;
@@ -120,28 +121,19 @@ form {
 }
 
 .descripcion_foto {
-    border-right: solid 2px $rosa;
+    border-right: solid 5px $rosa;
 }
 
 .estudio_foto {
-    border-left: solid 2px $rosa;
+    border-left: solid 5px $rosa;
 }
 
-.automaquillaje {
-    max-width: 200px;
-    background-color:$rosa;
-}
 
-.cursos {
-    .cursos_meta {
-        h2 {
-        @include titulos;
-        }
-    }
-}
+
+
 
 .presentacion {
-
+    margin-bottom: 80px;
     img {
         border-radius: 8px;
         width: 700px;
@@ -157,41 +149,47 @@ form {
 .galeria {
     img {
         margin: 10px;
+        opacity: 0.5;
+    }
+    img:hover {
+        opacity: 1;
     }
 }
 
 
 .cursos {
-    .cursos_meta {
-        h2 {
-            @include titulos;
-        }
-        p {
-            @include parrafos;
-        }
-    }
     .cursos_div {
         h3 {
             @include titulos;
-            color: $violeta;
+            color: white;
+            text-align: center;
         }
         p {
             @include parrafos;
-            color: $violeta;
+            color: white;
+            text-align: center;
         }
         h6 {
             @include titulos;
+            color: white;
+            text-align: center;
         }
         strong {
             @include parrafos;
+            color: white;
+            text-align: center;
         }
         min-width: 400px;
         max-width: 500px;
-        border: 1px solid $rosa;
+        border: 1px solid $violeta;
         border-radius: 8px;
         margin: 10px;
         padding: 10px;
-        background-color: $rosa;
+        background-color: $violeta;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
 
 }
@@ -207,13 +205,21 @@ form {
     list-style-type: none;
     li {
         @include parrafos;
-        color: $violeta;
+        color: white;
     }
 }
 }
 
 .btn {
-    background-color: $violeta;
+    background-color: white;
+    color: $violeta;
+    align-self: center;
+    border: none;
+}
+
+.btn:hover {
+    background-color: $rosa;
+    color: $violeta;
 }
 
 .tarjetas {
@@ -305,4 +311,11 @@ nav {
             }
         }
     }
+}
+
+.producto1 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 10px;
 }

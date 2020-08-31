@@ -43,7 +43,7 @@ header ul {
 
 .row .yo {
   width: 200px;
-  border-radius: 50%; }
+  border-radius: 10px; }
 
 footer {
   background-color: #f7d6e0;
@@ -73,56 +73,57 @@ form {
   margin-top: 50px; }
 
 .descripcion_foto {
-  border-right: solid 2px #f7d6e0; }
+  border-right: solid 5px #f7d6e0; }
 
 .estudio_foto {
-  border-left: solid 2px #f7d6e0; }
+  border-left: solid 5px #f7d6e0; }
 
-.automaquillaje {
-  max-width: 200px;
-  background-color: #f7d6e0; }
-
-.cursos .cursos_meta h2 {
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: 400; }
-
-.presentacion img {
-  border-radius: 8px;
-  width: 700px; }
+.presentacion {
+  margin-bottom: 80px; }
+  .presentacion img {
+    border-radius: 8px;
+    width: 700px; }
 
 .row .descripcion {
   font-family: 'Red Hat Display', sans-serif; }
 
 .galeria img {
-  margin: 10px; }
+  margin: 10px;
+  opacity: 0.5; }
 
-.cursos .cursos_meta h2 {
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: 400; }
-
-.cursos .cursos_meta p {
-  font-family: 'Red Hat Display', sans-serif; }
+.galeria img:hover {
+  opacity: 1; }
 
 .cursos .cursos_div {
   min-width: 400px;
   max-width: 500px;
-  border: 1px solid #f7d6e0;
+  border: 1px solid #5e548e;
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
-  background-color: #f7d6e0; }
+  background-color: #5e548e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
   .cursos .cursos_div h3 {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
-    color: #5e548e; }
+    color: white;
+    text-align: center; }
   .cursos .cursos_div p {
     font-family: 'Red Hat Display', sans-serif;
-    color: #5e548e; }
+    color: white;
+    text-align: center; }
   .cursos .cursos_div h6 {
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    color: white;
+    text-align: center; }
   .cursos .cursos_div strong {
-    font-family: 'Red Hat Display', sans-serif; }
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    text-align: center; }
 
 .marcas {
   border-top: solid 3px #f7d6e0;
@@ -133,10 +134,17 @@ form {
   list-style-type: none; }
   .cursos_div ul li {
     font-family: 'Red Hat Display', sans-serif;
-    color: #5e548e; }
+    color: white; }
 
 .btn {
-  background-color: #5e548e; }
+  background-color: white;
+  color: #5e548e;
+  align-self: center;
+  border: none; }
+
+.btn:hover {
+  background-color: #f7d6e0;
+  color: #5e548e; }
 
 .tarjetas {
   margin-top: 100px; }
@@ -227,3 +235,9 @@ form {
 
 nav ul li a:hover {
   text-decoration: none; }
+
+.producto1 {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 10px; }
